@@ -4,12 +4,14 @@ import java.util.Objects;
 
 public class MenuItems {
 
+    //fields
     private String name;
     private String description;
     private String category;
     private Double price;
     private boolean isNew;
 
+    //constructors
     public MenuItems(String name, Double price, String description, String category, boolean aIsNew) {
         this.name = name;
         this.description = description;
@@ -17,7 +19,6 @@ public class MenuItems {
         this.price = price;
         this.isNew = true;
     }
-
 
 
     //getters and setters
@@ -42,11 +43,24 @@ public class MenuItems {
     public void setIsNew(boolean aIsNew) { this.isNew = aIsNew; }
 
 
+    //toString
+
+    public String toString() {
+        if (isNew = true) {
+
+
+           return "Hot NEW Item!" + "\n" + category + "\n" + name + "\t" + "$" + price + "\n" + description + "\n";
+
+        } else {
+
+            return "\n" + category + "\n" + name + "\t" + "$" + price + "\n" + description + "\n";
+        }
+    }
 
 
     //add method to add menu item to array list
-    public static void addItem(String aName) {
-
+    public static void addItem(String name, Double price, String description, String category, boolean aIsNew){
+        //MenuItems +=
 
     }
 
